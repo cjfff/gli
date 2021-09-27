@@ -1,0 +1,27 @@
+{
+  "name": "gli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "bin": {
+    "gli": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle -f cjs --no-sourcemap --no-compress --tsconfig tsconfig.json",
+    "dev": "microbundle watch -f cjs --no-sourcemap --no-compress --tsconfig tsconfig.json",
+    "new-dev": "tsc --watch",
+    "new-build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "inquirer": "^8.1.5",
+    "microbundle": "^0.13.3"
+  },
+  "dependencies": {
+    "commander": "^8.2.0"
+  }
+}
